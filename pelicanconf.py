@@ -5,13 +5,14 @@ from __future__ import unicode_literals
 AUTHOR = '@tegarimansyah'
 SITENAME = 'Tegar & Words'
 SITESUBTITLE = 'Technology, Lifestyle, Idea. Simply Written'
+SITE_DESCRIPTION = 'Technology, Lifestyle, Idea. Simply Written from Tegar for you.'
 SITEURL = ''
 
 PATH = 'content'
 
 TIMEZONE = 'Asia/Jakarta'
 
-DEFAULT_LANG = 'en'
+DEFAULT_LANG = 'id'
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
