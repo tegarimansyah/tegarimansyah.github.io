@@ -1,15 +1,25 @@
 <nav id="menu">
   <a class="close-button">Close</a>
   <div class="nav-wrapper">
-    <p class="nav-label">Menu</p>
+    <p class="nav-label">Navigation</p>
     <ul>
       {% for title, link in MENUITEMS %}
           <li><a href="{{ link }}" role="presentation">{{ title }}</a></li>
       {% endfor %}
 
       {% if DISPLAY_PAGES_ON_MENU %}
+            <li>
+                <span style="font-size: 10pt; padding: 1.25em;">Pages</span>
+            </li>
           {% for p in pages %}
               <li{% if p == page %} class="nav-{{p.slug}} active"{% endif %} role="presentation"><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
+          {% endfor %}
+              
+          <li>
+              <span style="font-size: 10pt; padding: 1.25em;">Categories</span>
+          </li>
+          {% for cat, null in categories %}
+              <li{% if cat == category %} class="nav-{{cat.slug}} active"{% endif %} role="presentation"><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
           {% endfor %}
       {% else %}
           {% if DISPLAY_CATEGORIES_ON_MENU %}

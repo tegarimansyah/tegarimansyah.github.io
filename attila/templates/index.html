@@ -36,17 +36,13 @@
           </span>
           {% endif %}
           <span id="menu-button" class="nav-button">
-            <a class="menu-button"><i class="ic ic-menu"></i> Menu</a>
+            <a class="menu-button"><i class="ic ic-menu"></i> Pages and Categories</a>
           </span>
         </nav>
         <h1 class="blog-name"><a href="{{ SITEURL }}/">{{ SITENAME }}</a></h1>
         {% if SITESUBTITLE %}
         <span class="blog-description">{{ SITESUBTITLE }}</span>
         {% endif %}
-        <li class="blog-category"><a class="no-hover">Read about:</a></li>
-        {% for cat, articles in categories |sort %}
-        <li  class="blog-category"><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
-        {% endfor %}
 
         {% if selected_cover %}
           <div class="blog-cover cover" style="background-image: url('{{ selected_cover }}')">
@@ -55,10 +51,18 @@
         {% endif %}
       </div>
     </header>
-
+    
 {% endblock header %}
-
+    
 {% block content %}
+    
+<div style="background-color:#000000; padding-top:15px; padding-bottom:15px; text-align: center;">
+  <span style="color:white; font-weight:900; margin-bottom: 15px; display: block;">Categories</span>
+
+  {% for cat, articles in categories|sort %}
+  <li class="blog-category"><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
+  {% endfor %}
+</div>
 
 <div id="index" class="container">
   <main class="content" role="main">
