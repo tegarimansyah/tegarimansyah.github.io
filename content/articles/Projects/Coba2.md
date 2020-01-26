@@ -1,7 +1,7 @@
-Title: Hidup Sebagai Orang Islam Seperti Bermain Game 2
+Title: Project Post
 Date: 2019-06-03 23:08
 Author: tegarimansyah
-Slug: hidup-seperti-bermain-game-4
+Slug: hidup-seperti-bermain-game-2
 Tags: Makna Hidup, Pengalaman, Motivasi, Self-reminder
 Status: published
 Summary: Di dalam dunia Game, kita bisa mengikuti events untuk mendapat uang, exp dan barang lebih cepat. Ternyata di dunia nyata juga memiliki konsep yang sama! ...
