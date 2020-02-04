@@ -14,7 +14,7 @@ You can contact me @tegarimansyah in [telegram](https://t.me/tegarimansyah), [fa
 ---
 
 * **My Full Name**: Tegar Imansyah
-* **Title**: Software Engineer or IoT Enthusiast (Please use as appropriate)
+* **Title**: Software Engineer or IoT Enthusiast or Software Architect at Alterra (Please use as appropriate)
 * Just in case you need to use my **photos** in some poster:
 
 ![tegar](../assets/images/me.jpg)
