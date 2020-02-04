@@ -16,17 +16,12 @@
           {% endfor %}
               
           <li>
-              <span style="font-size: 10pt; padding: 1.25em;">Categories</span>
+              <span style="font-size: 10pt; padding: 1.25em;">You May Interested</span>
           </li>
-          {% for cat, null in categories %}
-              <li{% if cat == category %} class="nav-{{cat.slug}} active"{% endif %} role="presentation"><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
+          {% for tag, null in tags %}
+              <li role="presentation"><a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a></li>
           {% endfor %}
       {% else %}
-          {% if DISPLAY_CATEGORIES_ON_MENU %}
-              {% for cat, null in categories %}
-                  <li{% if cat == category %} class="nav-{{cat.slug}} active"{% endif %} role="presentation"><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
-              {% endfor %}
-          {% endif %}
       {% endif %}
 
       {% for name,link in SOCIAL if name in ['rss', 'rss-square', 'feed'] %}

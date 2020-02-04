@@ -11,7 +11,7 @@ This page will have two section: **Now** and **Past Activities**. Enjoy!
 
 # Now
 
-This section is inspired by [The /now page movement](https://sivers.org/nowff). The list below is what I want to do in Q1 2020, the other activities will most likely be rejected (except it will in line with my impossible list).
+This section is inspired by [The /now page movement](https://sivers.org/nowff). The list below is what I want to do in Q1 2020, the other activities will most likely be rejected (except it will in line with [my impossible list](/pages/impossible-list)).
 
 ## Current Responsibilities
 
