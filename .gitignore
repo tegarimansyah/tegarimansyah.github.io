@@ -3,3 +3,4 @@ archive/
 wp_output/
 output/
 .vscode
+.DS_Store
