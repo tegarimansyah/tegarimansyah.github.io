@@ -5,28 +5,28 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://tegarimansyah.github.io/</loc>
-<lastmod>2020-02-05T16:39:00-00:00</lastmod>
+<lastmod>2020-02-14T23:33:19-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://tegarimansyah.github.io/archives.html</loc>
-<lastmod>2020-02-05T16:39:00-00:00</lastmod>
+<lastmod>2020-02-14T23:33:19-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://tegarimansyah.github.io/tags.html</loc>
-<lastmod>2020-02-05T16:39:00-00:00</lastmod>
+<lastmod>2020-02-14T23:33:19-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://tegarimansyah.github.io/categories.html</loc>
-<lastmod>2020-02-05T16:39:00-00:00</lastmod>
+<lastmod>2020-02-14T23:33:19-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -46,7 +46,14 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://tegarimansyah.github.io/simple-cli-to-forecast-our-financial.html</loc>
+<loc>https://tegarimansyah.github.io/explore-it-2020.html</loc>
+<lastmod>2020-02-14T00:00:00+07:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://tegarimansyah.github.io/simple-cli-for-forecast-our-financial.html</loc>
 <lastmod>2020-02-05T05:55:00+07:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
@@ -68,13 +75,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://tegarimansyah.github.io/django-inventory-management.html</loc>
-<lastmod>2019-11-20T00:00:00+07:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>https://tegarimansyah.github.io/intranet-chatting-system.html</loc>
 <lastmod>2019-11-20T00:00:00+07:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
@@ -138,7 +138,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://tegarimansyah.github.io/category/communities.html</loc>
-<lastmod>2019-12-01T08:55:00+07:07</lastmod>
+<lastmod>2020-02-14T00:00:00+07:07</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -165,15 +165,15 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://tegarimansyah.github.io/tag/projects.html</loc>
-<lastmod>2020-02-05T05:55:00+07:07</lastmod>
+<loc>https://tegarimansyah.github.io/tag/opinion.html</loc>
+<lastmod>2020-02-14T00:00:00+07:07</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://tegarimansyah.github.io/tag/opinion.html</loc>
-<lastmod>2019-12-01T08:55:00+07:07</lastmod>
+<loc>https://tegarimansyah.github.io/tag/projects.html</loc>
+<lastmod>2020-02-05T05:55:00+07:07</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -186,7 +186,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://tegarimansyah.github.io/tag/problem-incubation.html</loc>
+<loc>https://tegarimansyah.github.io/tag/ideas-incubation.html</loc>
 <lastmod>2019-06-04T22:22:00+07:07</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
@@ -201,7 +201,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://tegarimansyah.github.io/author/tegarimansyah.html</loc>
-<lastmod>2020-02-05T05:55:00+07:07</lastmod>
+<lastmod>2020-02-14T00:00:00+07:07</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
