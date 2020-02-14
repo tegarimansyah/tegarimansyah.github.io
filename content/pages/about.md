@@ -11,36 +11,43 @@ This page will have two section: **Now** and **Past Activities**. Enjoy!
 
 # Now
 
-This section is inspired by [The /now page movement](https://sivers.org/nowff). The list below is what I want to do in Q1 2020, the other activities will most likely be rejected (except it will in line with [my impossible list](/pages/impossible-list)).
+This section is inspired by [The /now page movement](https://sivers.org/nowff). The list below is what I want to do in Q1 2020, the other activities will most likely be rejected.
 
 ## Current Responsibilities
 
 - Working in [Alterra](https://alterra.id) Malang as a Software Architect.
+- IoT Specialist in [PiTech System](https://www.linkedin.com/company/pitech-system/), Start Up that developing Poultry Farming 
 - Advising and oversees [Surabaya.py](https://t.me/surabayadotpy), Surabaya Python User Group.
 - Organize some tech community: 
     - [Python Indonesia](https://t.me/pythonID)
     - Python Conference APAC 2020 [Country Representative](https://wiki.python.org/moin/PyConAPAC/Community)
-    - Jatim Developer Day [Conference 2020](http://jatimdevday.id/) (_Not in active role_)
-    - GDG Cloud Surabaya (_still inactive_)
+    - Jatim Developer Day [Conference 2020](http://jatimdevday.id/)
+    - [GDG Cloud Surabaya](https://www.meetup.com/GDG-Cloud-Surabaya/members/?op=leaders) (_still inactive_)
 - Take some courses
     - Tahsin in [Qaaf](http://qaaf.web.id/)
     - Flutter in udemy
 
 ## Personal Project
 
-More in /incubation-ideas or /projects tag
+More in [/tags/incubation-ideas](/tag/ideas-incubation) or [/tags/projects tag](/tag/projects)
 
 - [Konsisten.id](https://konsisten.id) - Goal Management System to help people know what to achieve and consistently achieve it.
 - [Urusan.id](https://urusan.id) - Several mini projects.
-- Accepting the opportunity to [share my knowledge or experience](/pages/talk), but limiting max 1 talks per month or two.
+    - [ads](https://a.urusan.id) - Offline to Online Ads Aggregator
+    - [quran](https://quran.urusan.id) - Learn to read Qur'an
+    - [IoT](htpps://quran.urusan.id) - Broker, Dashboard, and other functionality for IoT Project
+- Accepting the opportunity to [share my knowledge or experience](/talk), but limiting max 1 talks per month or two.
+- Participate some hackathon and contest to brainstrom my ideas, networking, new experience, new point of view and get additional funding >.<
+
+---
 
 # Past Activities
 
-Activities that worth to mention in public
+Activities that worth to mention in public. If you want to invite me for seminar or workshop, please refer to [talk & workshop](/talk) page.
 
 ## 2020
 
-- **[January 28]** Finishing Golang course in Udemy
+- **[February 15]** Talk in explore IT about smart city and IoT
 
 - **[January 11]** Talk in Hacktiv8 Open House Surabaya about IoT
 

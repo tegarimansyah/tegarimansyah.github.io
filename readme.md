@@ -10,7 +10,7 @@ List of menu:
 Tags:
  
 * Download PDF <- Tulisan yang dijadikan pdf
-* Problem Incubation <- Brainstroming ide, menulis why and how nya, menggambar concept map nya
+* Ideas Incubation <- Brainstroming ide, menulis why and how nya, menggambar concept map nya
 * Projects <- Ide yang sudah rilis. Satu project satu post, update tinggal update di post aja
 
 List of Category:
