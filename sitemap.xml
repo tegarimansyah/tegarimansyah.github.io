@@ -5,28 +5,28 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://tegarimansyah.github.io/</loc>
-<lastmod>2020-02-14T23:33:19-00:00</lastmod>
+<lastmod>2020-02-15T13:46:45-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://tegarimansyah.github.io/archives.html</loc>
-<lastmod>2020-02-14T23:33:19-00:00</lastmod>
+<lastmod>2020-02-15T13:46:45-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://tegarimansyah.github.io/tags.html</loc>
-<lastmod>2020-02-14T23:33:19-00:00</lastmod>
+<lastmod>2020-02-15T13:46:45-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://tegarimansyah.github.io/categories.html</loc>
-<lastmod>2020-02-14T23:33:19-00:00</lastmod>
+<lastmod>2020-02-15T13:46:45-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -60,6 +60,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://tegarimansyah.github.io/from-zero-to-production-web-app-with-makefile.html</loc>
+<lastmod>2020-01-10T00:00:00+07:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
 <loc>https://tegarimansyah.github.io/how-it-feel-to-organize-pycon-indonesia-2019-remotely.html</loc>
 <lastmod>2019-12-01T08:55:00+07:00</lastmod>
 <changefreq>monthly</changefreq>
@@ -74,22 +81,8 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://tegarimansyah.github.io/django-inventory-management.html</loc>
-<lastmod>2019-11-20T00:00:00+07:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
 <loc>https://tegarimansyah.github.io/iot-architecture.html</loc>
 <lastmod>2019-11-20T00:00:00+07:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>https://tegarimansyah.github.io/from-zero-to-production-web-app-with-makefile.html</loc>
-<lastmod>2019-10-23T00:00:00+07:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>

@@ -45,7 +45,7 @@
 
   <link href="https://tegarimansyah.github.io/ci-cd-for-python-conference-indonesia-website.html" rel="canonical" />
 
-    <meta name="description" content="I have so many items in my shopping list, but I worry to spend too much. What if I don't have enough money in two months? So I just...">
+    <meta name="description" content="Usually when we organize an event, we need a website and assign several people to take care of it. At PyCon, I believe in collaboration,...">
 
     <meta name="author" content="tegarimansyah">
 
@@ -57,7 +57,7 @@
 <!-- Open Graph -->
 <meta property="og:site_name" content="Tegar & Words"/>
 <meta property="og:title" content="CI/CD for Python Conference Indonesia Website"/>
-<meta property="og:description" content="I have so many items in my shopping list, but I worry to spend too much. What if I don't have enough money in two months? So I just..."/>
+<meta property="og:description" content="Usually when we organize an event, we need a website and assign several people to take care of it. At PyCon, I believe in collaboration,..."/>
 <meta property="og:locale" content="en_US"/>
 <meta property="og:url" content="https://tegarimansyah.github.io/ci-cd-for-python-conference-indonesia-website.html"/>
 <meta property="og:type" content="article"/>
@@ -85,7 +85,7 @@
   },
   "image": "https://tegarimansyah.github.io/theme/images/post-bg.jpg",
   "url": "https://tegarimansyah.github.io/ci-cd-for-python-conference-indonesia-website.html",
-  "description": "I have so many items in my shopping list, but I worry to spend too much. What if I don't have enough money in two months? So I just..."
+  "description": "Usually when we organize an event, we need a website and assign several people to take care of it. At PyCon, I believe in collaboration,..."
 }
 </script>
 </head>
@@ -152,7 +152,41 @@
         <article class="post">
         <div class="inner">
             <section class="post-content">
-                <p>wasd</p>
+                <p>Usually when we organize an event, we need a website and assign several people to take care of it. At PyCon, I believe in collaboration, so I made the PyCon ID 2019 website become Open Source. Let's see on <a href="https://github.com/pyconid/pyconid2019">github</a> for the source code and pycon.id for live website.</p>
+<p>I will save how I manage the projects for another post, here we talk about the tech stack and CI/CD. The pycon.id built with <a href="https://github.com/getpelican/pelican">pelican</a> - static site generator, so there are two components here: theme and content. Because the generated website are static site (html + css + js only), we utilize free hosting from <a href="https://pages.github.com/">github pages</a> and deploy it using free CI service from <a href="https://travis-ci.org">travis-ci</a> for open source. </p>
+<p>After we <a href="https://travis-ci.org/account/repositories">enable our repo</a> in travis "watch list", then every time we push to our remote repo travis will do something. What to do? It depends how you define it in <code>.travis.yml</code>. For example, this is <a href="https://github.com/pyconid/pyconid2019/blob/master/.travis.yml">our code</a>:</p>
+<div class="highlight"><pre><span></span><span class="nt">language</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">python</span>
+<span class="nt">dist</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">trusty</span>
+
+<span class="nt">python</span><span class="p">:</span>
+<span class="p p-Indicator">-</span> <span class="s">&#39;3.5&#39;</span>
+
+<span class="nt">before_install</span><span class="p">:</span>
+<span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">pip install -U pip</span>
+<span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">pip install -U setuptools</span>
+<span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">pip install -r requirements.txt</span>
+
+<span class="nt">script</span><span class="p">:</span>
+<span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">make html</span>
+
+<span class="nt">after_success</span><span class="p">:</span>
+<span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">rm -rf .git/</span>
+<span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">git init</span>
+<span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">git config user.name &quot;PyconID&quot;</span>
+<span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">git config user.email &quot;pyconid@pycon.id&quot;</span>
+<span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">git config --global push.default simple</span>
+<span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">git remote add origin https://$GITHUB_TOKEN@github.com/pyconid/pyconid2019</span>
+<span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">make github</span>
+
+<span class="nt">branches</span><span class="p">:</span>
+  <span class="nt">only</span><span class="p">:</span>
+  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">master</span>
+</pre></div>
+
+
+<p>We are using gitflow for this project. Everyone that want to contribute must fork the repo and add a pull request. We will evaluate the code, merge to master and let travis do the deployment.</p>
+<p>Pelican is python base module, so we use python language as base for the CI. We simply install all dependency and make generated html. If no error occured, we push our newly created html in our <code>gh-pages</code> branch using <code>make github</code> command. </p>
+<p>It's fun to see how this simple approach, with limited number of Pycon committees, we can invite several people to contribute both in making themes, making words and so on. As a core committee, I and the team will focus more on planning, evaluating and merging to master. I will apply this concept to the next community conference, interested in contributing?</p>
             </section>
 
             <section class="post-info">
@@ -214,10 +248,10 @@
                             <p class="post-nav-excerpt">This is the second time for us (Surabaya, especially surabaya.py organizer) to bring...</p>
                         </section>
                     </a>
-                    <a class="post-nav-prev" href="https://tegarimansyah.github.io/django-inventory-management.html">
+                    <a class="post-nav-prev" href="https://tegarimansyah.github.io/iot-architecture.html">
                         <section class="post-nav-teaser">
                             <i class="ic ic-arrow-right"></i>
-                                <h2 class="post-nav-title">Django Inventory Management</h2>
+                                <h2 class="post-nav-title">IoT Architecture</h2>
                             <p class="post-nav-excerpt">I have so many items in my shopping list, but I worry to spend too much. What if I...</p>
                         </section>
                     </a>
