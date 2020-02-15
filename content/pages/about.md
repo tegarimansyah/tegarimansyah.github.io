@@ -29,7 +29,7 @@ This section is inspired by [The /now page movement](https://sivers.org/nowff). 
 
 ## Personal Project
 
-More in [/tags/incubation-ideas](/tag/ideas-incubation) or [/tags/projects tag](/tag/projects)
+More in [/tags/projects tag](/tag/projects)
 
 - [Konsisten.id](https://konsisten.id) - Goal Management System to help people know what to achieve and consistently achieve it.
 - [Urusan.id](https://urusan.id) - Several mini projects.
