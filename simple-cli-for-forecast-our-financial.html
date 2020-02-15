@@ -50,6 +50,7 @@
     <meta name="author" content="tegarimansyah">
 
     <meta name="tags" content="Projects">
+    <meta name="tags" content="Incubation Ideas">
 
 
 
@@ -61,11 +62,12 @@
 <meta property="og:locale" content="en_US"/>
 <meta property="og:url" content="https://tegarimansyah.github.io/simple-cli-for-forecast-our-financial.html"/>
 <meta property="og:type" content="article"/>
-<meta property="article:published_time" content="2020-02-05 05:55:00+07:00"/>
+<meta property="article:published_time" content="2020-02-08 00:00:00+07:00"/>
 <meta property="article:modified_time" content=""/>
 <meta property="article:author" content="https://tegarimansyah.github.io/author/tegarimansyah.html">
 <meta property="article:section" content="Tech"/>
 <meta property="article:tag" content="Projects"/>
+<meta property="article:tag" content="Incubation Ideas"/>
 <meta property="og:image" content="https://tegarimansyah.github.io/theme/images/post-bg.jpg">
 
 <!-- Twitter Card -->
@@ -76,7 +78,7 @@
   "@type": "Article",
   "name": "Simple CLI For Forecast Our Financial",
   "headline": "Simple CLI For Forecast Our Financial",
-  "datePublished": "2020-02-05 05:55:00+07:00",
+  "datePublished": "2020-02-08 00:00:00+07:00",
   "dateModified": "",
   "author": {
     "@type": "Person",
@@ -107,8 +109,9 @@
           <li>
               <span style="font-size: 10pt; padding: 1.25em;">Our Topics:</span>
           </li>
-              <li role="presentation"><a href="https://tegarimansyah.github.io/tag/opinion.html">Opinion</a></li>
               <li role="presentation"><a href="https://tegarimansyah.github.io/tag/projects.html">Projects</a></li>
+              <li role="presentation"><a href="https://tegarimansyah.github.io/tag/opinion.html">Opinion</a></li>
+              <li role="presentation"><a href="https://tegarimansyah.github.io/tag/incubation-ideas.html">Incubation Ideas</a></li>
               <li role="presentation"><a href="https://tegarimansyah.github.io/tag/self-reminder.html">Self-Reminder</a></li>
               <li role="presentation"><a href="https://tegarimansyah.github.io/tag/ideas-incubation.html">Ideas Incubation</a></li>
               <li role="presentation"><a href="https://tegarimansyah.github.io/tag/free-pdf.html">Free PDF</a></li>
@@ -138,7 +141,7 @@
         <span class="post-meta">
                 <a href="https://tegarimansyah.github.io/author/tegarimansyah.html">Tegar Imansyah</a>
             | <a href="https://tegarimansyah.github.io/category/tech.html">Tech</a>
-            | <time datetime="Wed 05 February 2020">Wed 05 February 2020</time> 
+            | <time datetime="Sat 08 February 2020">Sat 08 February 2020</time> 
         </span>
         <!-- TODO : Modified check -->
       </div>
@@ -152,11 +155,71 @@
         <article class="post">
         <div class="inner">
             <section class="post-content">
-                <p>wasd</p>
-<div class="highlight"><pre><span></span><span class="kd">func</span> <span class="p">(</span><span class="nx">r</span> <span class="o">*</span><span class="nx">receiver</span><span class="p">)</span> <span class="nx">nama</span><span class="p">()</span> <span class="nx">Error</span> <span class="p">{</span>
-    <span class="nx">test</span> <span class="o">:=</span> <span class="nx">r</span><span class="p">.</span><span class="nx">Nama</span>
+                <p>I have so many items in my shopping list, but I worry to spend too much. What if I don't have enough money in two months? So I just create a simple golang program to forecast it. All the code available <a href="https://github.com/tegarimansyah/personal-finance-forecasting">on github</a></p>
+<p>The idea is as follow:</p>
+<ul>
+<li>User has remaining money in savings that want to spend</li>
+<li>User write monthly income</li>
+<li>User write monthly expense</li>
+<li>User write what and when he want to spend or receive (for example: buy bicyle in march, buy smartphone in april, get bonus from company in may)</li>
+<li>Program show us how much many do we have in every end of months (for example: 100.000 in march, 30.000 in april, 130.000 in may)</li>
+<li>So we can get what we want or postpone it without any hesitate.</li>
+</ul>
+<p>The user write his budgeting in toml file. Because we want to use golang, it's not as easy as dynamic type programming. So if we want to use this TOML structure</p>
+<div class="highlight"><pre><span></span>title = &quot;Title&quot;
+initial_value = 10000000
+initial_month = 2
+last_month = 4
+
+[monthly]
+  income_total = 5000000
+  expense_total = 3000000
+
+  [[monthly.income]]
+    name = &quot;Gajian&quot;
+    amount = 5000000
+    include_first_month = true
+
+  [[monthly.expense]]
+    name = &quot;Makan&quot;
+    amount = 1500000
+
+  [[monthly.expense]]
+    name = &quot;Traveling&quot;
+    amount = 1000000
+
+  [[monthly.expense]]
+    name = &quot;Hadiah&quot;
+    amount = 500000
+</pre></div>
+
+
+<p>We must create this struct</p>
+<div class="highlight"><pre><span></span><span class="kd">type</span> <span class="nx">tomlConfig</span> <span class="kd">struct</span> <span class="p">{</span>
+    <span class="nx">Title</span>         <span class="kt">string</span> <span class="s">`toml:&quot;title&quot;`</span>
+    <span class="nx">InitialAmount</span> <span class="kt">int</span>    <span class="s">`toml:&quot;initial_value&quot;`</span>
+    <span class="nx">InitialMonth</span>  <span class="kt">int</span>    <span class="s">`toml:&quot;initial_month&quot;`</span>
+    <span class="nx">LastMonth</span>     <span class="kt">int</span>    <span class="s">`toml:&quot;last_month&quot;`</span>
+    <span class="nx">Monthly</span>       <span class="kd">struct</span> <span class="p">{</span>
+        <span class="nx">Income</span>       <span class="p">[]</span><span class="nx">MonthlyBudget</span> <span class="s">`toml:&quot;income&quot;`</span>
+        <span class="nx">IncomeTotal</span>  <span class="kt">int</span>             <span class="s">`toml:&quot;income_total,omitempty&quot;`</span>
+        <span class="nx">Expense</span>      <span class="p">[]</span><span class="nx">MonthlyBudget</span> <span class="s">`toml:&quot;expense&quot;`</span>
+        <span class="nx">ExpenseTotal</span> <span class="kt">int</span>             <span class="s">`toml:&quot;expense_total,omitempty&quot;`</span>
+    <span class="p">}</span> <span class="s">`toml:&quot;monthly&quot;`</span>
+    <span class="nx">AdditionalBudget</span> <span class="kd">struct</span> <span class="p">{</span>
+        <span class="nx">Income</span>  <span class="p">[]</span><span class="nx">AdditionalBudget</span> <span class="s">`toml:&quot;income,omitempty&quot;`</span>
+        <span class="nx">Expense</span> <span class="p">[]</span><span class="nx">AdditionalBudget</span> <span class="s">`toml:&quot;expense,omitempty&quot;`</span>
+    <span class="p">}</span> <span class="s">`toml:&quot;additional_budget,omitempty&quot;`</span>
 <span class="p">}</span>
 </pre></div>
+
+
+<p>At the date of writing, the functionalities only read from TOML file, parse to struct and adding additional budget. I need at least two more functionalies: calculate monthly remaining money and display it.</p>
+<p>After all functionalities done, I want to revamp how the program interact with user. I interested with some of golang lib that make it easier to create more interactive CLI tools:</p>
+<ul>
+<li><a href="https://github.com/spf13/cobra">https://github.com/spf13/cobra</a></li>
+<li><a href="https://github.com/manifoldco/promptui/">https://github.com/manifoldco/promptui/</a></li>
+</ul>
             </section>
 
             <section class="post-info">
@@ -174,7 +237,7 @@
                 </div>
 
                 <aside class="post-tags">
-<a href="https://tegarimansyah.github.io/tag/projects.html">Projects</a>                </aside>
+<a href="https://tegarimansyah.github.io/tag/projects.html">Projects</a><a href="https://tegarimansyah.github.io/tag/incubation-ideas.html">Incubation Ideas</a>                </aside>
 
                 <div class="clear"></div>
 
