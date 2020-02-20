@@ -1,5 +1,5 @@
 Title: About
-Date: 2017-02-22 10:47
+Date: 2020-02-20
 Author: tegarimansyah
 Slug: about
 alias: /about.html
@@ -11,7 +11,7 @@ This page will have two section: **Now** and **Past Activities**. Enjoy!
 
 # Now
 
-This section is inspired by [The /now page movement](https://sivers.org/nowff). The list below is what I want to do in Q1 2020, the other activities will most likely be rejected.
+This section is inspired by [The /now page movement](https://sivers.org/nowff). The list below is what I want to do in Q1 2020, the other activities will most likely be rejected. Last update 20 Feb 2020.
 
 ## Current Responsibilities
 
@@ -36,7 +36,7 @@ More in [/tags/projects tag](/tag/projects)
     - [ads](https://a.urusan.id) - Offline to Online Ads Aggregator
     - [quran](https://quran.urusan.id) - Learn to read Qur'an
     - [IoT](htpps://quran.urusan.id) - Broker, Dashboard, and other functionality for IoT Project
-- Accepting the opportunity to [share my knowledge or experience](/talk), but limiting max 1 talks per month or two.
+- ~~Accepting the opportunity to [share my knowledge or experience](/talk), but limiting max 1 talks per month or two~~. I decide to do more writing rather than talks for this quarter. 
 - Participate some hackathon and contest to brainstrom my ideas, networking, new experience, new point of view and get additional funding >.<
 
 ---
